@@ -5,11 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Inline Example</title>
-    <style></style>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        height: 400%;
+        background-color: red;
+      }
+      /*.box {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+        display: inline;
+      }*/
+
+      /*    #boxOne {
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        position: static;
+      }
+
+      #boxTwo {
+        height: 300px;
+        width: 300px;
+        background-color: green;
+        position: fixed;
+      }*/
+
+      .abs-box {
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        position: relative;
+      }
+
+      .abs-child {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+    </style>
   </head>
   <body>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <!-- <div id="boxOne">
+      <div class="box-child"></div>
+    </div>
+    <div id="boxTwo">
+      <div class="box-child"></div>
+    </div> -->
+    <div class="abs-box">
+      <div class="abs-child"></div>
+    </div>
   </body>
 </html>
