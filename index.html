@@ -13,10 +13,10 @@
         padding: 0;
       }
 
-      body {
+      /*body {
         height: 400%;
         background-color: red;
-      }
+      }*/
       /*.box {
         background-color: red;
         width: 200px;
@@ -39,7 +39,7 @@
         position: fixed;
       }*/
 
-      .abs-box {
+      /*.abs-box {
         width: 400px;
         height: 400px;
         background-color: yellow;
@@ -53,6 +53,25 @@
         position: absolute;
         right: 10px;
         top: 10px;
+      }*/
+
+      .father {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        height: 100%;
+        flex-wrap: wrap;
+      }
+      .box {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
       }
     </style>
   </head>
@@ -63,8 +82,21 @@
     <div id="boxTwo">
       <div class="box-child"></div>
     </div> -->
-    <div class="abs-box">
+    <!-- <div class="abs-box">
       <div class="abs-child"></div>
+    </div> -->
+
+    <div class="father">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
     </div>
   </body>
 </html>
