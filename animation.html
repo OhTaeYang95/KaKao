@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inline Example</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            animation: 1.5s scale-and-rotate-square infinite ease-in-out;
+        }
+        @keyframes scale-and-rotate-square {
+          
+          0%{
+            transform: none;
+          }
+
+          50%{
+            transform: rotate(1turn) scale(.5, .5);
+          }
+
+          100%{
+            transform: none;
+          }
+        }
+    </style>
+    <body>
+      <div class="box"></div>
+    </body>
+</html>
