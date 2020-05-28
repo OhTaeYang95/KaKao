@@ -3,144 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Inline Example</title>
-    <style>
-      body,
-      html {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-
-      /*body {
-        height: 400%;
-        background-color: red;
-      }*/
-      /*.box {
-        background-color: red;
-        width: 200px;
-        height: 200px;
-        border: 2px solid black;
-        display: inline;
-      }*/
-
-      /*bloxk*/
-      /*    #boxOne {
-        height: 300px;
-        width: 300px;
-        background-color: yellow;
-        position: static;
-      }
-
-      #boxTwo {
-        height: 300px;
-        width: 300px;
-        background-color: green;
-        position: fixed;
-      }*/
-
-      /*position*/
-      /*.abs-box {
-        width: 400px;
-        height: 400px;
-        background-color: yellow;
-        position: relative;
-      }
-
-      .abs-child {
-        width: 100px;
-        height: 100px;
-        background-color: green;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-      }*/
-
-      /*flex*/
-      /*.father {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-direction: row;
-        height: 100%;
-        flex-wrap: wrap;
-      }
-      .box {
-        background-color: red;
-        width: 200px;
-        height: 200px;
-        border: 1px solid black;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-      }*/
-
-      input[type="submit"] {
-        background-color: red;
-      }
-
-      input[type="password"] {
-        background-color: blue;
-      }
-      input {
-        border: 1px solid yellow;
-      }
-
-      .box {
-        background-color: green;
-        display: block;
-        height: 100px;
-        border: 1px solid black;
-      }
-
-      .box:first-child {
-        background-color: aqua;
-      }
-
-      .box:nth-child(2) {
-        background-color: brown;
-      }
-
-      .box:last-child {
-        background-color: pink;
-      }
-    </style>
+    <script
+      src="https://kit.fontawesome.com/587f3490d3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Find | Kakao Clone</title>
   </head>
   <body>
-    <!-- position -->
-    <!-- <div id="boxOne">
-      <div class="box-child"></div>
-    </div>
-    <div id="boxTwo">
-      <div class="box-child"></div>
-    </div> -->
-    <!-- <div class="abs-box">
-      <div class="abs-child"></div>
-    </div> -->
-
-    <!-- flex -->
-    <!-- <div class="father">
-      <div class="box">1</div>
-      <div class="box">2</div>
-      <div class="box">3</div>
-      <div class="box">4</div>
-      <div class="box">5</div>
-      <div class="box">6</div>
-      <div class="box">7</div>
-      <div class="box">8</div>
-      <div class="box">9</div>
-      <div class="box">10</div>
-    </div> -->
-
-    <div class="container">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box">
-        <input type="password" />
-        <input type="submit" />
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span class="status-bar__clock">13:54</span>
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
       </div>
     </div>
+    <header class="header">
+      <div class="header__header-column">
+        <h1 class="header__title">Find</h1>
+      </div>
+      <div class="header__header-column">
+        <span class="header__icon"><i class="fas fa-search"></i></span>
+        <span class="header__icon"><i class="fas fa-cog"></i></span>
+      </div>
+    </header>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__list-item">
+          <a href="friends.html" class="nav__list-link">
+            <i class="far fa-user"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="index.html" class="nav__list-link">
+            <i class="far fa-comments"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="nav__list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </body>
 </html>
