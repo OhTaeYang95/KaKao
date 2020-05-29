@@ -1,26 +1,31 @@
 .nav {
   position: fixed;
-  background-color: #fcfcfc;
   width: 100%;
+  background-color: #fcfcfc;
   padding: 20px 50px;
   left: 0px;
   bottom: 0px;
   border-top: 1px solid #f7f7f7;
 }
 
-.nav__list {
+.nav .nav__list {
   display: flex;
   justify-content: space-between;
 }
 
-.nav__list-link {
+.nav i {
+  font-size: 20px;
+}
+
+.nav .nav__list-link {
   position: relative;
 }
 
-.nav__badge {
+.nav .nav__badge {
   position: absolute;
   top: -7px;
   right: -7px;
+  font-size: 10px;
   color: white;
   background-color: #dc5d46;
   width: 18px;
@@ -28,7 +33,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 2px;
   border-radius: 50%;
-  font-size: 11px;
+}
+
+@keyframes showNavBar {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.nav {
+  transform: translateY(80px);
+  animation: showNavBar 0.5s ease-out forwards;
+  animation-delay: 0.5s;
 }
