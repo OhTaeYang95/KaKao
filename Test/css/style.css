@@ -5,6 +5,7 @@
 @import "friend.css";
 @import "chat.css";
 @import "find.css";
+@import "more.css";
 * {
   box-sizing: border-box;
 }
