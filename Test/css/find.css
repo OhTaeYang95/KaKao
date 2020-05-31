@@ -1,0 +1,29 @@
+.find__top {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #f7f7f7;
+  margin-bottom: 30px;
+}
+
+.find__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.find__list-name {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.find__friend-btn {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 40px;
+  border-radius: 15%;
+}

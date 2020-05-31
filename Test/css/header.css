@@ -20,3 +20,8 @@
   margin-left: 20px;
   cursor: pointer;
 }
+
+a {
+  text-decoration: none;
+  color: #020202;
+}
