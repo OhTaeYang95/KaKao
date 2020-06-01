@@ -1,13 +1,76 @@
-.more .more__btn-list,
-.more .more__suggestions-list {
+.etc {
+  display: flex;
+  justify-content: space-between;
+}
+
+.more__right-column {
+  display: flex;
+  margin-bottom: 80px;
+  margin-right: 10px;
+  border: 2px solid #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.more__bank {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #bfbfbf;
+  border: 1px solid #bfbfbf;
+  border-radius: 7px;
+  height: 60px;
+}
+
+.more__pay {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f0;
+  border: 1px solid #f0f0f0;
+  border-radius: 5px;
+  padding: 0px 5px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+.more__text {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.more__btn-list {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.more__btn-list i {
+  cursor: pointer;
+}
+
+.more__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.more__btn-title {
+  margin-top: 10px;
+}
+
+.more__suggestions-list {
   margin: 30px 0px;
   margin-left: 10px;
   display: flex;
   align-items: center;
 }
 
-.more__btn-list .more__btn,
-.more .suggestion {
+.suggestion {
   margin-right: 40px;
   display: flex;
   flex-direction: column;
@@ -15,17 +78,14 @@
   cursor: pointer;
 }
 
-.more__btn .more__btn-title {
-  font-size: 14px;
-  margin-top: 15px;
-}
-
-.more .more__suggestions {
+.more__suggestions {
+  margin-top: 30px;
   border-top: 1px solid #f7f7f7;
+  border-bottom: 1px solid #f7f7f7;
   padding-top: 20px;
 }
 
-.more .more__title {
+.more__title {
   opacity: 0.8;
   margin-bottom: 20px;
 }
@@ -47,4 +107,19 @@
 .suggestion__icon i {
   font-size: 28px;
   color: white;
+}
+
+.more__create {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 25px;
+  opacity: 0.8;
+  padding: 15px 0px;
+  cursor: pointer;
+}
+
+.more__right-column i {
+  cursor: pointer;
 }

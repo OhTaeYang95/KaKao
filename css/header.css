@@ -1,7 +1,6 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 30px;
 }
 
@@ -11,17 +10,18 @@
 }
 
 .header .header__icon {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header i {
+  padding: 0px 5px;
   font-size: 20px;
   margin-left: 20px;
   cursor: pointer;
 }
 
-.header .header__header-column {
-  display: flex;
-  align-items: center;
-}
-
-.header .header__back-btn {
-  font-size: 22px;
-  margin-right: 20px;
+a {
+  text-decoration: none;
+  color: #020202;
 }

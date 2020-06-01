@@ -3,126 +3,105 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kakao</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Find | Kakao Clone</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
     <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">13:54 </span>
+      <div class="status-bar__left-column">
+        <span>SKT</span>
+        <span>7:35</span>
+        <i class="fas fa-image"></i>
+        <i class="fas fa-comment-dots"></i>
+        <i class="fas fa-lightbulb"></i>
       </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
+
+      <div class="status-bar__right-column">
         <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-signal"></i>
+        <span>82%</span>
+        <i class="fas fa-battery-three-quarters"></i>
       </div>
     </div>
+
     <header class="header">
-      <div class="header__header-column">
-        <h1 class="header__title">Find</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
-      </div>
-    </header>
-    <main class="find">
-      <header class="find__header">
-        <ul class="find__header-list">
-          <li class="find__header-btn header-btn">
-            <span class="header-btn__icon">
-              <i class="fas fa-qrcode fa-2x"></i>
-            </span>
-            <span class="header-btn__title">
-              QR Code
-            </span>
-          </li>
-          <li class="find__header-btn header-btn">
-            <span class="header-btn__icon">
-              <i class="fas fa-user-plus fa-2x"></i>
-            </span>
-            <span class="header-btn__title">
-              Add by Contacts
-            </span>
-          </li>
-          <li class="find__header-btn header-btn">
-            <span class="header-btn__icon">
-              <i class="fas fa-passport fa-2x"></i>
-            </span>
-            <span class="header-btn__title">
-              Add by ID
-            </span>
-          </li>
-          <li class="find__header-btn header-btn">
-            <span class="header-btn__icon">
-              <i class="far fa-envelope fa-2x"></i>
-            </span>
-            <span class="header-btn__title">
-              Invite
-            </span>
-          </li>
+      <span class="header__left-column">
+        <span class="header__title">찾기</span>
+      </span>
+
+      <span class="header__right-column">
+        <ul class="header__icon">
+          <li><i class="fas fa-search"></i></li>
+          <li><i class="fas fa-cog"></i></li>
         </ul>
-      </header>
-      <ul class="find__recommended">
-        <h5 class="find__title">
-          Recommended Friends
-        </h5>
-        <li class="find__friend friend friend--lg">
-          <div class="friend__column">
-            <img src="images/avatar.jpg" class="friend__avatar" />
-            <div class="friend__content">
-              <span class="friend__name">
-                Nicolás Serrano
-              </span>
-            </div>
-          </div>
-          <div class="friend__column">
-            <div class="friend__add-btn">
-              <i class="fas fa-user-plus"></i>
-            </div>
-          </div>
+      </span>
+    </header>
+
+    <main>
+      <ul class="find__top">
+        <li class="find__list">
+          <i class="fas fa-qrcode fa-2x"></i>
+          <span class="find__list-name">큐알코드</span>
+        </li>
+        <li class="find__list"><i class="fas fa-user-plus fa-2x"></i>
+          <span class="find__list-name">친구 찾기</span></li>
+        <li class="find__list"><i class="fas fa-passport fa-2x"></i>
+          <span class="find__list-name">아이디로 찾기</span></li>
+        </li>
+        <li class="find__list"><i class="far fa-envelope fa-2x"></i>
+          <span class="find__list-name">초대</span></li>
         </li>
       </ul>
+
+      <div class="plus__friend">
+        <span class="sub__header">추천 친구</span>
+      </div>
+
+      <div class="friend__group">
+        <div class="small__avatar">
+          <img src="images/avatar6.jpg" />
+          <div class="profile__text">
+            <span class="avatar__name-small">리사</span>
+            <span class="avatar__bottom-text">블랙핑크</span>
+          </div>
+        </div>
+
+        <div class="find__friend-btn">
+          <a href="#"><i class="fas fa-user-plus"></i></a>
+        </div>
+          
+      </div>
+
+      
     </main>
+
     <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="friends.html" class="nav__list-link">
-            <i class="far fa-user"></i
-          ></a>
+      <ul class="nav__icon">
+        <li>
+          <a href="index.html"><i class="far fa-user"></i></a>
         </li>
-        <li class="nav__list-item">
-          <a href="index.html" class="nav__list-link">
-            <i class="far fa-comment"></i>
-          </a>
+        <li>
+          <a href="chat.html"><i class="far fa-comment"></i></a>
         </li>
-        <li class="nav__list-item">
-          <a href="find.html" class="nav__list-link">
-            <i class="fas fa-search"></i>
-          </a>
+        <li>
+          <a href="find.html"><i class="fas fa-search"></i></a>
         </li>
-        <li class="nav__list-item">
-          <a href="more.html" class="nav__list-link">
-            <i class="fas fa-ellipsis-h"></i>
-          </a>
+        <li>
+          <a href="more.html"><i class="fas fa-ellipsis-h"></i></a>
         </li>
       </ul>
     </nav>
     <div class="bigScreen">
-      <span class="bigScreen__text">Please make your screen small! 😱</span>
+      <span class="bigScreen__text">화면을 작게 만들어 주세요!!</span>
     </div>
   </body>
 </html>

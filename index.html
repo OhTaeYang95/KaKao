@@ -3,98 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kakao</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
-      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Chats | Kakao Clone</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
     <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">13:54 </span>
+      <div class="status-bar__left-column">
+        <span>SKT</span>
+        <span>7:35</span>
+        <i class="fas fa-image"></i>
+        <i class="fas fa-comment-dots"></i>
+        <i class="fas fa-lightbulb"></i>
       </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
+
+      <div class="status-bar__right-column">
         <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-signal"></i>
+        <span>82%</span>
+        <i class="fas fa-battery-three-quarters"></i>
       </div>
     </div>
+
     <header class="header">
-      <div class="header__header-column">
-        <h1 class="header__title">Chats</h1>
+      <div class="header__left-column">
+        <span class="header__title">친구</span>
       </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="far fa-comment"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
+
+      <div class="header__right-column">
+        <ul class="header__icon">
+          <li><i class="fas fa-search"></i></li>
+          <li><i class="fas fa-cog"></i></li>
+        </ul>
       </div>
     </header>
-    <main class="chats">
-      <ul class="chats__list">
-        <li class="chats__chat chat">
-          <a href="chat.html">
-            <div class="chats__chat friend friend--lg">
-              <div class="friend__column">
-                <img src="images/avatar.jpg" class="m-avatar friend__avatar" />
-                <div class="friend__content">
-                  <span class="friend__name">
-                    Lynn
-                  </span>
-                  <span class="friend__bottom-text">
-                    Going home!
-                  </span>
-                </div>
-              </div>
-              <div class="friend__column">
-                <span class="chat__timestamp">
-                  March 8
-                </span>
-              </div>
-            </div>
-          </a>
-        </li>
-      </ul>
+
+    <main>
+      <div class="big__avatar">
+        <img src="images/avatar.jpg" />
+        <div class="profile__text">
+          <span class="avatar__name">태양</span>
+          <span class="avatar__bottom-text">Kakao Test</span>
+        </div>
+      </div>
+
+      <div class="plus__friend">
+        <span class="sub__header">추천 친구</span>
+      </div>
+
+      <div class="middle__avatar">
+        <img src="images/avatar2.jpg" />
+        <div class="profile__text">
+          <span class="avatar__name">아이린</span>
+          <span class="avatar__bottom-text">레드벨벳</span>
+        </div>
+      </div>
+
+      <div class="friends">
+        <span class="sub__header">친구 3</span>
+      </div>
+
+      <div class="small__avatar">
+        <img src="images/avatar3.jpg" />
+        <div class="profile__text">
+          <span class="avatar__name-small">수지</span>
+        </div>
+      </div>
+
+      <div class="friend__group">
+        <div class="small__avatar">
+          <img src="images/avatar4.jpg" />
+          <div class="profile__text">
+            <span class="avatar__name-small">모모</span>
+            <span class="avatar__bottom-text">트와이스</span>
+          </div>
+        </div>
+
+        <div class="etc">
+          <span class="music">트와이스 - Feel Special ▶</span>
+        </div>
+      </div>
+
+      <div class="small__avatar">
+        <img src="images/avatar5.jpg" />
+        <div class="profile__text">
+          <span class="avatar__name-small">미연</span>
+        </div>
+      </div>
     </main>
+
     <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__list-item">
-          <a href="friends.html" class="nav__list-link">
-            <i class="far fa-user"></i
-          ></a>
+      <ul class="nav__icon">
+        <li>
+          <a href="index.html"><i class="fas fa-user"></i></a>
         </li>
-        <li class="nav__list-item">
-          <a href="index.html" class="nav__list-link">
-            <div class="nav__badge">8</div>
-            <i class="fas fa-comment"></i>
-          </a>
+        <li>
+          <a href="chat.html"><i class="far fa-comment"></i></a>
         </li>
-        <li class="nav__list-item">
-          <a href="find.html" class="nav__list-link">
-            <i class="fas fa-search"></i>
-          </a>
+        <li>
+          <a href="find.html"><i class="fas fa-search"></i></a>
         </li>
-        <li class="nav__list-item">
-          <a href="more.html" class="nav__list-link">
-            <i class="fas fa-ellipsis-h"></i>
-          </a>
+        <li>
+          <a href="more.html"><i class="fas fa-ellipsis-h"></i></a>
         </li>
       </ul>
     </nav>
+
     <div class="bigScreen">
-      <span class="bigScreen__text">Please make your screen small! 😱</span>
+      <span class="bigScreen__text">화면을 작게 만들어 주세요!!</span>
     </div>
   </body>
 </html>
