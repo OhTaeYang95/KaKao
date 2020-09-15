@@ -17,7 +17,7 @@
     ],
     "theme_color": "#B12A34",
     "background_color": "#FDFDFD",
-    "start_url": "https://ohtaeyang95.github.io/",
+    "start_url": "./",
     "display": "standalone",
     "orientation": "portrait"
 }
