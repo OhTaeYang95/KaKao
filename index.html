@@ -122,22 +122,13 @@
   </div>
   <script>
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.getRegistrations('/service-worker.js')
-        .then(function (registrations) {
-          console.log('[Service Worker 등록 완료]', registrations)
-          for (let registration of registrations) {
-            registration.unregister()
-          }
-        }).catch(function (error) {
+      navigator.serviceWorker.register('https://github.com/OhTaeYang95/KaKao/blob/gh-pages/service-worker.js')
+        .then(function (success) {
+          console.log('[Service Worker 등록 완료]', success)
+        })
+        .catch(function (error) {
           console.log('[Service Worker 등록 실패]', error);
         });
-      // navigator.serviceWorker.register('/service-worker.js')
-      //   .then(function (success) {
-      //     console.log('[Service Worker 등록 완료]', success)
-      //   })
-      //   .catch(function (error) {
-      //     console.log('[Service Worker 등록 실패]', error);
-      //   });
     }
   </script>
 </body>
