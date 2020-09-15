@@ -3,6 +3,7 @@ module.exports = {
         'index.html',
         'manifest.json',
         'css/**.*',
-        'images/**.*'
+        'images/**.*',
+        'node_modules/**.*'
     ]
 }
