@@ -1,10 +1,11 @@
 "use strict";
 
 window.onload = function (e) {
-    console.log("알림성공")
+
 }
 
 Notification.requestPermission(result => {
+    console.log("알림성공");
     if (result === 'granted') {
         showNotification('So nice to have you here!', 'Hey there!')
     }
