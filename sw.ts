@@ -4,6 +4,23 @@ window.onload = function (e) {
     console.log("알림성공")
 }
 
+Notification.requestPermission(result => {
+    if (result === 'granted') {
+        showNotification('So nice to have you here!', 'Hey there!')
+    }
+});
+
+function showNotification(title, message) {
+    if ('Notification' in window) {
+        navigator.serviceWorker.ready.then(registration => {
+            registration.showNotification(title, {
+                body: message,
+                tag: 'vibration-sample'
+            });
+        });
+    }
+}
+
 export const PUSH_APPLICATION_SERVER_KEY = 'AAAANVHcwbk:APA91bEDFGpqgjIBBrbq0MRwmtJsOPmhVo0hP3xc6OXrvjl7sPwFWEhyhhDFs0JcjE1e7hne1CCW9GMmuV9GggbqYq982yNQoUE7Ofh2Y5EZBdmRc9k37FsEJaTAxA1rfNoErWck4Adr';
 
 // 해시 처리
