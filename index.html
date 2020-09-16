@@ -131,7 +131,6 @@
     //     }
     //   });
     // }
-
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('https://ohtaeyang95.github.io/KaKao/service-worker.js')
         .then(function (success) {
@@ -140,6 +139,17 @@
         .catch(function (error) {
           console.log('[Service Worker 등록 실패]', error);
         });
+    }
+
+    let isNotificationSupported = 'Notification' in window;
+    if (isNotificationSupported) {
+      Notification.requestPermission().then(function (result) {
+        if (result === 'granted') {
+          console.log('[Notification] 허용: ', result);
+        } else {
+          console.log('[Notification] 차단: ', result);
+        }
+      });
     }
   </script>
 </body>
