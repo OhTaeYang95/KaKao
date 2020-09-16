@@ -13,7 +13,7 @@
         }
     ],
     "background_color": "#FDFDFD",
-    "start_url": "./",
+    "start_url": "/",
     "display": "standalone",
     "orientation": "portrait"
 }
