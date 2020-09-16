@@ -1,8 +1,8 @@
 "use strict";
 
-console.log("알림성공");
+
 window.onload = function (e) {
-    console.log("알림성공");
+    console.log("알림성공")
     Notification.requestPermission().then(function (result) {
         if (result === 'granted') {
             randomNotification();
