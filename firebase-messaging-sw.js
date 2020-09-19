@@ -1,20 +1,19 @@
 'Use Strict'
 
-
-importScripts('https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/7.18.0/firebase-messaging.js');
-importScripts('https://www.gstatic.com/firebase/init.js');
+importScripts('/__/firebasejs/7.18.0/firebase-app.js');
+importScripts('/__/firebasejs/7.18.0/firebase-messaging.js');
+importScripts('/__/firebase/init.js');
 
 
 firebase.initializeApp({
-    apiKey: "AIzaSyD4qxy4eX3fJfZnTvDxAIRGPWO10v27_WE",
-    authDomain: "pushpush-db0a1.firebaseapp.com",
-    databaseURL: "https://pushpush-db0a1.firebaseio.com",
-    projectId: "pushpush-db0a1",
-    storageBucket: "pushpush-db0a1.appspot.com",
-    messagingSenderId: "398879637973",
-    appId: "1:398879637973:web:eb374912f7d6d048443d5c",
-    measurementId: "G-DPRXFEBTXF"
+    apiKey: "AIzaSyC44hKOwN_nO6gSKoA1IhvI26tsQ7ARAsA",
+    authDomain: "kakaopush-905da.firebaseapp.com",
+    databaseURL: "https://kakaopush-905da.firebaseio.com",
+    projectId: "kakaopush-905da",
+    storageBucket: "kakaopush-905da.appspot.com",
+    messagingSenderId: "479497244749",
+    appId: "1:479497244749:web:e8a5e0180ccb4672cb0c04",
+    measurementId: "G-NF1MS1JZ20"
 });
 
 // Retrieve an instance of Firebase Messaging so that it can handle background
@@ -48,7 +47,7 @@ messaging.setBackgroundMessageHandler(function (payload) {
 // [START set_public_vapid_key]
 // Add the public key generated from the console here.
 messaging.usePublicVapidKey(
-    'BFojhHHb-uyrr6BHpu7rFv6EY2TkGdNjx5PAlR2DJ3oazawOfHZVm3Komds0wfKL7SvpZXQEnYWHELnOeBavZI0');
+    'BGKvZ1-97MeBzzTYCjvVvkUmelvD2GClv4Y3bYle7VaANa3JBrZDjdYIQXYJOLO5N9vS4ZcCDLSQQ0Rovwv2DPM');
 // [END set_public_vapid_key]
 
 // IDs of divs that display Instance ID token UI or request permission UI.

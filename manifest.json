@@ -2,7 +2,7 @@
     "short_name": "pwa",
     "name": "pwa offline web",
     "description": "Progressive Web App that lists games submitted to the A-Frame category in the js13kGames 2017 competition.",
-    "gcm_sender_id": "103953800507",
+    "gcm_sender_id": "479497244749",
     "icons": [{
             "src": "images/icons/192.png",
             "type": "image/png",
