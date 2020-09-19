@@ -1,8 +1,9 @@
 'Use Strict'
 
-importScripts('/__/firebasejs/7.18.0/firebase-app.js');
-importScripts('/__/firebasejs/7.18.0/firebase-messaging.js');
-importScripts('/__/firebase/init.js');
+importScripts('https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/7.18.0/firebase-messaging.js');
+importScripts('https://www.gstatic.com/firebase/init.js');
+
 
 
 firebase.initializeApp({

@@ -37,6 +37,42 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
+
+export const PUSH_APPLICATION_SERVER_KEY = 'AAAAGIP5Ymk:APA91bEoB5d4gGgCI4Dwe0ThJzdJOLak_TpZv9ncv9SEv-hciwYYFK_lrE4UUKX-WTZLIaHgYfBVueRG2-sZRtAgP_UIcwxt6rzlSb7GW5w6GmCs4VGiOuJCibaLktHMydGswbcGxTd5';
+// 해시 처리
+const urlB64ToUint8Array = (base64String) => {
+  const padding = '='.repeat((4 - base64String.length % 4) % 4);
+  const base64 = (base64String + padding)
+    .replace(/\-/g, '+')
+    .replace(/_/g, '/');
+  const rawData = window.atob(base64);
+  const outputArray = new Uint8Array(rawData.length);
+  for (let i = 0; i < rawData.length; ++i) {
+    outputArray[i] = rawData.charCodeAt(i);
+  }
+  return outputArray;
+};
+// 구독하기
+export const subscribeUser = (swRegistration) => {
+  const applicationServerKey = urlB64ToUint8Array(PUSH_APPLICATION_SERVER_KEY);
+  const ACCESS_PUSH_TOKEN = 'ACCESS_PUSH_TOKEN';
+  swRegistration.pushManager.subscribe({
+    userVisibleOnly: true,
+    applicationServerKey: applicationServerKey,
+  }).then((subscription) => {
+    const pwaSubscription = JSON.parse(JSON.stringify(subscription));
+    localStorage.setItem(ACCESS_PUSH_TOKEN, pwaSubscription.keys.auth); // 추후 코드 제거를 위해 저장합니다.
+    pushSubscription(pwaSubscription);
+  }).catch(e => console.log(`subscribe error`, e));
+};
+export const pushSubscription = (subscription) => {
+  // 서버로 구독 정보 전송 
+};
+
+
+
+
+
 var precacheConfig = [
   ["css/chat.css", "bafa18fc404a3a16ab56d5931a18f06e"],
   ["css/find.css", "444f726c2ea292f320bbdc052f057ad6"],
