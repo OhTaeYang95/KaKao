@@ -1,8 +1,8 @@
 'Use Strict'
 
-importScripts('https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js');
-importScripts('https://www.gstatic.com/firebasejs/7.18.0/firebase-messaging.js');
-importScripts('https://www.gstatic.com/firebase/init.js');
+// importScripts('https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js');
+// importScripts('https://www.gstatic.com/firebasejs/7.18.0/firebase-messaging.js');
+// importScripts('https://www.gstatic.com/firebase/init.js');
 
 
 
@@ -27,7 +27,7 @@ const messaging = firebase.messaging();
 // background (Web app is closed or not in browser focus) then you should
 // implement this optional method.
 // [START background_handler]
-messaging.setBackgroundMessageHandler(function (payload) {
+messaging.onMessage(function (payload) {
     console.log('[firebase-messaging-sw.js] Received background message ', payload);
     // Customize notification here
     const notificationTitle = 'Background Message Title';
