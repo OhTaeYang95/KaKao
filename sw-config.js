@@ -4,6 +4,5 @@ module.exports = {
         'manifest.json',
         'css/**.*',
         'images/**.*',
-        'node_modules/**.*'
     ]
 }
